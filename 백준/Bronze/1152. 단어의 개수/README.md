@@ -2,6 +2,11 @@
 
 [문제 링크](https://www.acmicpc.net/problem/1152) 
 
+### 배운 것
+- StringTokenizer(str, " ");
+- 속도 : System.in.read() > BufferReader > Scanner
+- read() : 한 문자 씩 읽음
+
 ### 성능 요약
 
 메모리: 37680 KB, 시간: 504 ms
