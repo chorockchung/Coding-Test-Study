@@ -2,6 +2,15 @@
 
 [문제 링크](https://www.acmicpc.net/problem/2675) 
 
+### 배운 것
+- BufferedReader
+ - read() : 한 문자만 개행문자 없이 읽음. readLine() : 한 문장을 개행문자 포함해 읽음.
+ - read() : return 값이 int 이므로 형변환 필요, readLine() : string 반환
+ - 한 줄에 여러개 입력 시, br.readLine().split(" ") 사용!
+- String vs StringBuffer : immutable vs mutable -> StringBuffer가 메모리 최적화에 좋다
+* StringBuffer : 동기화보장, StringBuilder : 동기화보장X --> 코테 환경은 단일스레드 이므로 Builder가 좋다
+
+
 ### 성능 요약
 
 메모리: 14168 KB, 시간: 128 ms
