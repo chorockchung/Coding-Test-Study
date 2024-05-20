@@ -2,6 +2,14 @@
 
 [문제 링크](https://www.acmicpc.net/problem/1181) 
 
+### 배운것
+- br.read() 는 문자를 읽음
+- read(), readLine() 은 while문으로 입력값이 null이 아닐동안 받도록 작성
+- 성능 : Collections.sort > Arrays.sort (최악 : nlogn / n^2)
+- Collections.sort 사용시 set 불가. list 가능
+- Collections.sort의 Comparator는 o1>o2 시 return 1, 자리 변경
+- 향상된 for문 : for(String s: list) 사용하기
+
 ### 성능 요약
 
 메모리: 23804 KB, 시간: 580 ms
