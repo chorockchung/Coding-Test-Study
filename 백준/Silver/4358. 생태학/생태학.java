@@ -35,9 +35,11 @@ public class Main {
 		}
 		Collections.sort(list);
 		
+		StringBuilder sb = new StringBuilder();
 		for(String s: list) {
-			System.out.print(s + " ");
-            System.out.printf("%.4f\n", (map.get(s) * 100.0 / species));
+			sb.append(s + " ");
+            sb.append(String.format("%.4f\n", (map.get(s) * 100.0 / species)));
 		}
+		System.out.print(sb);
 	}
 }
