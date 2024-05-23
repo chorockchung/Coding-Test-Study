@@ -2,6 +2,11 @@
 
 [문제 링크](https://www.acmicpc.net/problem/4358) 
 
+### 배운 것
+출력시 StringBuilder를 이용해 출력값으로 쓰일 문자열을 더한 후 System.out.print()로 출력하니
+속도가 약 150ms 감소함.
+* % 계산시 100 곱하는 것, 식 작성 순서 잊지말기.
+
 ### 성능 요약
 
 메모리: 88248 KB, 시간: 844 ms
