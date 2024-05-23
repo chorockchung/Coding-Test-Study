@@ -29,10 +29,7 @@ public class Main {
 			species++;
 		}
 		
-		List<String> list = new ArrayList<>();
-		for(String s : map.keySet()) {
-			list.add(s);
-		}
+		List<String> list = new ArrayList<>(map.keySet());
 		Collections.sort(list);
 		
 		StringBuilder sb = new StringBuilder();
