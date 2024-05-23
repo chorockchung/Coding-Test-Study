@@ -13,19 +13,14 @@ import java.util.Map;
 import java.util.Set;
 
 public class Main {
-	public static void main(String[] args) throws IOException {
+		public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		Map<String, Integer> map = new HashMap<>();
 		String tree;
 		int species = 0;
 		while((tree = br.readLine()) != null) {
-			if(map.containsKey(tree)) {
-				int value = map.get(tree);
-				map.replace(tree, value+1);
-			}
-			else
-				map.put(tree, 1);
+			map.put(tree, map.getOrDefault(tree, 0)+1);
 			species++;
 		}
 		
@@ -38,5 +33,5 @@ public class Main {
             sb.append(String.format("%.4f\n", (map.get(s) * 100.0 / species)));
 		}
 		System.out.print(sb);
-	}
+	    }
 }
