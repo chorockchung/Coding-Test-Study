@@ -14,7 +14,7 @@ public class Main {
 		
 		for(int i = 0; i < n; i++) {
 			String str = br.readLine();
-			if(str.length() < patternLen || str.indexOf(pattern[0]) == str.lastIndexOf(pattern[1]))
+			if(str.length() < patternLen)
 				sb.append("NE").append("\n");
 			else if(str.indexOf(pattern[0]) == 0 && str.lastIndexOf(pattern[1]) == str.length()-pattern[1].length()) 
 				sb.append("DA").append("\n");
