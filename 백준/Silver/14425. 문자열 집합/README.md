@@ -2,6 +2,14 @@
 
 [문제 링크](https://www.acmicpc.net/problem/14425) 
 
+### 배운 것
+contains() 메소드 시간복잡도
+- arrayList : o(n) (모두 순회)
+- hashmap : o(1) (키를 해시버킷으로 매핑)
+- hashset : o(1)
+- treeset : o(logn)
+  --> 검색 속도를 위해 hashset/hashmap 사용하기
+  
 ### 성능 요약
 
 메모리: 30816 KB, 시간: 2628 ms
