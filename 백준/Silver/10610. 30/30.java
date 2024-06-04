@@ -8,7 +8,8 @@ import java.util.List;
 public class Main {
 	public static void main(String[] args) throws IOException {	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+		StringBuilder sb = new StringBuilder();
+
 		int total = 0;
 		char[] input = br.readLine().toCharArray();
 		for(char ch : input) {
@@ -26,8 +27,9 @@ public class Main {
 			System.out.println("-1");
 		else {
 			for(char ch : list) {
-				System.out.print(ch);
+				sb.append(ch);
 			}
+			System.out.println(sb);
 		}
 			
 		br.close();
