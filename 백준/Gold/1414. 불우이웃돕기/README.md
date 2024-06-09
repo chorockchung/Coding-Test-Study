@@ -3,9 +3,9 @@
 [문제 링크](https://www.acmicpc.net/problem/1414) 
 
 ### 배운것
-크루스칼 알고리즘의 parents 배열은 union되어도 그 값이 전부 같지 않음. 
-간선이 모두 연결되었는지 확인하기 위해서는 union 한 횟수가 vertex - 1 인지 살펴야함 
-(parents의 값이 모두 같은지 확인하는 것이 아님!!)
+크루스칼 알고리즘의 parents 배열은 union되어도 그 값이 전부 같지 않음. <br>
+간선이 모두 연결되었는지 확인하기 위해서는 union 한 횟수가 vertex - 1 인지 살펴야함 <br>
+(parents의 값이 모두 같은지 확인하는 것이 아님!!)<br>
 
 ### 성능 요약
 
