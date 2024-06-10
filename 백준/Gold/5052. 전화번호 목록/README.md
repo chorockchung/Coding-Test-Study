@@ -2,6 +2,9 @@
 
 [문제 링크](https://www.acmicpc.net/problem/5052) 
 
+### 배운 것
+- Trie 성능 : 배열 > Map
+
 ### 성능 요약
 
 메모리: 101380 KB, 시간: 304 ms
