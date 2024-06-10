@@ -7,7 +7,7 @@ class Node {
 	boolean eow;
 	
 	Node() {
-		child = new Node[10];
+		child = new Node[10]; //0-9까지
 		eow = false;
 	}
 }
@@ -31,17 +31,17 @@ class Trie {
 				flag = true;
 			}		
 			
-			if(current.child[chIdx].eow) 
+			if(current.child[chIdx].eow) //앞서 입력된 문자열이 접두사인 경우
 				return false;
 			if(i == str.length() - 1) {
 				current.child[chIdx].eow = true;
-				if(!flag)
-					return false;
+				if(!flag) //마지막인데 새로운 노드를 추가하지 못했다면 해당 문자열은 앞서 입력된 문자열의 접두사(더 짧다) 
+					return false; 
 			}
 			else
 				current = current.child[chIdx];
 		}
-		return true;
+		return true; //계속해서 추가됐다면 새로운 문자 
 	}	
 }
 
