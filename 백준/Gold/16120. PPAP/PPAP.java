@@ -10,6 +10,12 @@ public class Main {
 
 		StringBuilder sb = new StringBuilder();
 		sb.append(br.readLine());
+        
+        if(sb.toString().equals("P") || sb.toString().equals("PPAP")) {
+			System.out.println("PPAP");
+			return;
+		}
+        
 		StringBuilder stack = new StringBuilder();
 
 		int stackSize = 0;
@@ -25,9 +31,7 @@ public class Main {
 			}
 		}	
 		
-		if(sb.toString().equals("P"))
-			System.out.println("PPAP");	
-		else if(stackSize != 4)
+		if(stackSize != 4)
 			System.out.println("NP");
 		else if(!stack.toString().equals("PPAP"))	
 			System.out.println("NP");
