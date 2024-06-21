@@ -24,10 +24,10 @@ public class Main {
         int m = Integer.parseInt(br.readLine());
         StringTokenizer st2 = new StringTokenizer(br.readLine());
 
+        StringBuilder sb = new StringBuilder();
         while(st2.hasMoreTokens()) {
         	boolean flag = false;
     		int t = Integer.parseInt(st2.nextToken());
-//    		System.out.println(t);
     		int left = 0;
     	    int right = n - 1;
     	    int mid;
@@ -42,8 +42,10 @@ public class Main {
         			break;
         		}
         	}
-    		System.out.println(flag ? 1 : 0);
+    		sb.append(flag ? 1 : 0).append('\n');
         }
+        
+        System.out.print(sb);
 
     }
     
