@@ -30,8 +30,8 @@ public class Main {
         
         long cnt = 0;
 
-        for (long sum : lsums) {
-            long complement = target - sum;
+        for (int sum : lsums) {
+            int complement = target - sum;
             cnt += countOccurrences(rsums, complement);
         }
         
@@ -42,13 +42,13 @@ public class Main {
         }
     }
     
-    public static long countOccurrences(List<Integer> sortedList, long value) {
+    public static int countOccurrences(List<Integer> sortedList, int value) {
         int leftIndex = lowerBound(sortedList, value);
         int rightIndex = upperBound(sortedList, value);
         return rightIndex - leftIndex;
     }
     
-    public static int lowerBound(List<Integer> sortedList, long value) {
+    public static int lowerBound(List<Integer> sortedList, int value) {
         int left = 0, right = sortedList.size();
         while (left < right) {
             int mid = (left + right) / 2;
@@ -61,7 +61,7 @@ public class Main {
         return left;
     }
     
-    public static int upperBound(List<Integer> sortedList, long value) {
+    public static int upperBound(List<Integer> sortedList, int value) {
         int left = 0, right = sortedList.size();
         while (left < right) {
             int mid = (left + right) / 2;
