@@ -10,7 +10,7 @@ public class Main {
     
     static int[] arr;
     
-    public static void subseq(int start, int end, long currentSum, List<Long> sums) {
+    public static void subseq(int start, int end, int currentSum, List<Integer> sums) {
         if (start > end) {
             sums.add(currentSum);
             return;
@@ -19,11 +19,11 @@ public class Main {
         subseq(start + 1, end, currentSum + arr[start], sums);
     }
 
-    public static long meetInTheMiddle(int n, long target) {
-        List<Long> lsums = new ArrayList<>();
+    public static long meetInTheMiddle(int n, int target) {
+        List<Integer> lsums = new ArrayList<>();
         subseq(0, n / 2 - 1, 0, lsums);
         
-        List<Long> rsums = new ArrayList<>();
+        List<Integer> rsums = new ArrayList<>();
         subseq(n / 2, n - 1, 0, rsums);
 
         Collections.sort(rsums);
@@ -42,13 +42,13 @@ public class Main {
         }
     }
     
-    public static long countOccurrences(List<Long> sortedList, long value) {
+    public static long countOccurrences(List<Integer> sortedList, long value) {
         int leftIndex = lowerBound(sortedList, value);
         int rightIndex = upperBound(sortedList, value);
         return rightIndex - leftIndex;
     }
     
-    public static int lowerBound(List<Long> sortedList, long value) {
+    public static int lowerBound(List<Integer> sortedList, long value) {
         int left = 0, right = sortedList.size();
         while (left < right) {
             int mid = (left + right) / 2;
@@ -61,7 +61,7 @@ public class Main {
         return left;
     }
     
-    public static int upperBound(List<Long> sortedList, long value) {
+    public static int upperBound(List<Integer> sortedList, long value) {
         int left = 0, right = sortedList.size();
         while (left < right) {
             int mid = (left + right) / 2;
@@ -78,7 +78,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
-        long s = Long.parseLong(st.nextToken());
+        int s = Integer.parseInt(st.nextToken());
         StringTokenizer nst = new StringTokenizer(br.readLine());
 
         int ni = 0;
