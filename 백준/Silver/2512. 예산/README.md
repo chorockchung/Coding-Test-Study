@@ -2,6 +2,16 @@
 
 [문제 링크](https://www.acmicpc.net/problem/2512) 
 
+# 배운것
+upperbound 는 최초 초과값을 찾는 것,
+이 문제는 최대값을 알아야 하기 때문에
+기존의 uppperbound의 코드와 다르게
+left <= right가 조건값이며
+mid보다 target이 크면 right = mid - 1 함으로써
+최종적으로 left 왼쪽의 right를 출력한다.
+left는 기존의 upperbound에서 최초 초과값이기 때문에
+최대값은 right가 된다.
+
 ### 성능 요약
 
 메모리: 15184 KB, 시간: 168 ms
