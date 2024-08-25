@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class Main {
 	
-	static int[] dp;
+	static long[] dp;
 
     public static void makeDP(int n) {
     	dp[0] = dp[1] = 1;
@@ -18,7 +18,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        dp = new int[n + 2];
+        dp = new long[n + 2];
         makeDP(n);
         System.out.println(dp[n+1]*2);
     }
